@@ -1,0 +1,138 @@
+:root {
+  --main-bg-color: rgb(105, 154, 167);
+  --main-font: Arial, Helvetica, sans-serif;
+  --gray-color: gray;
+  --dark-blue-color: rgb(30, 87, 103);
+  --base-color: white;
+  --selected-areas-bg: rgb(64, 178, 209);
+  --success-color: green;
+  --main-border-radius: 0.5rem;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: var(--main-font);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 4rem;
+  background-color: var(--base-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+}
+
+header {
+  margin-bottom: 5rem;
+}
+
+h1 {
+  margin-bottom: 1.2rem;
+}
+
+form {
+  margin-top: 2rem;
+}
+
+label {
+  display: block;
+  margin-top: 2rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border-radius: var(--main-border-radius);
+  border: 0.1rem solid var(--gray-color);
+  font-size: 1.6rem;
+}
+
+fieldset {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  border: none;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0;
+}
+
+.required::after {
+  content: '*';
+}
+
+.submit-button {
+  display: block;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  background-color: var(--dark-blue-color);
+  color: var(--base-color);
+  border: none;
+  border-radius: var(--main-border-radius);
+  cursor: pointer;
+}
+
+/* Selected areas container styles */
+#selectedAreas:not(:empty) {
+  margin-top: 1rem;
+  background: var(--selected-areas-bg);
+  border-radius: var(--main-border-radius);
+  padding: 1rem;
+}
+
+/* Selected area item styles */
+#selectedAreas div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--base-color);
+  border-radius: var(--main-border-radius);
+}
+
+/* Spacing between selected area items */
+#selectedAreas div:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+/* Selected area delete button styles */
+#selectedAreas button {
+  background: var(--dark-blue-color);
+  border: none;
+  color: var(--base-color);
+  border-radius: var(--main-border-radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* Success message styles */
+#successMessage:not(:empty) {
+  margin-top: 2rem;
+}
+
+#successMessage button {
+  display: block;
+  border: none;
+  background: black;
+  color: var(--base-color);
+  border-radius: var(--main-border-radius);
+  padding: 0.5rem 1rem;
+  margin-top: 1.6rem;
+  cursor: pointer;
+}
