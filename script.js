@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const emailInput = document.getElementById('email');
   const successMessage = document.getElementById('successMessage');
 
+  // Custom validation messages for required inputs in swedish
   const setCustomValidationMessages = () => {
     const requiredInputs = document.querySelectorAll('input[required]');
 
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
+  // Create area item for the selected areas
   const createAreaItem = (option) => {
     const areaDiv = document.createElement('div');
 
@@ -25,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return areaDiv;
   };
 
+  // Remove buttons for the selected areas
   const createRemoveAreaButton = (option) => {
     const removeButton = document.createElement('button');
 
@@ -51,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
+  // Reset form when user clicks on the go back button
   const resetForm = () => {
     form.style.display = 'block';
     header.style.display = 'block';
