@@ -19,7 +19,7 @@
 
                 <label for="name" class="required">Namn</label>
                 <input type="text" id="name" name="name" required>
-                <small>Skriv ditt för- och efternamn</small>
+                <small>Skriv ditt för- och efternamn.</small>
 
                 <label for="email" class="required">E-post</label>
                 <input type="email" id="email" name="email" required>
@@ -38,12 +38,12 @@
                     <option value="work">Arbetsliv och jobb</option>
                     <option value="politics">Kommun och politik</option>
                 </select>
-                <small>Håll CMD⌘ eller CTRL nedtryckt för att välja flera områden.</small>
+                <small class="area-info">Håll <span>CMD⌘</span> eller <span>CTRL</span> nedtryckt för att välja flera områden.</small>
                 
                 <div id="selectedAreas" aria-live="polite" role="status"></div>
             </fieldset>
 
-            <button type="submit" role="button" class="submit-button">Skicka in</button>
+            <button type="submit" role="button" aria-label="Skicka in nyhetsbrev anmälan" class="submit-button">Skicka in</button>
         </form>
 
         <div id="successMessage" aria-live="assertive" role="status"></div>
